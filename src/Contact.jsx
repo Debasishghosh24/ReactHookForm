@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import call from "./assets/call.png";
 import email from "./assets/message.png";
 import location from "./assets/location.png";
+import image from "./assets/_.jpeg";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -40,19 +41,20 @@ function Contact() {
   return (
     <>
       <div className="min-h-screen flex flex-col xl:flex-row lg:flex-row  items-center justify-center  bg-linear-to-t from-green-300 via-transparent to-orange-300 ">
-        <div className="w-auto mt-15 h-auto p-3 xl:w-145.5 xl:h-150.5 lg:w-145.5 lg:h-150.5 sm:h-160.5 sm:w-xl md:w-xl md:h-140  lg:mt-10 md:mt-20 sm:mt-35  md:rounded-t-2xl xl:rounded-r-none xl:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl sm:rounded-t-2xl bg-[radial-gradient(circle,#0b2a31_0%,#071A1F_40%,#000000_100%)]">
-          <div className="flex items-center justify-center flex-col gap-3">
+        <div style={{backgroundImage: `url(${image})`}} className=" relative bg-center  overflow-hidden w-auto mt-15 h-auto p-3 xl:w-145.5 xl:h-150.5 lg:w-145.5 lg:h-150.5 sm:h-160.5 sm:w-xl md:w-xl md:h-140  lg:mt-10 md:mt-20 sm:mt-35  md:rounded-t-2xl xl:rounded-r-none xl:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl sm:rounded-t-2xl bg-[radial-gradient(circle,#0b2a31_0%,#071A1F_40%,#000000_100%)]">
+          <div className="absolute inset-0 bg-black/60"></div>
+          <div className=" relative z-10 flex items-center justify-center flex-col gap-3">
             <div className="mt-20">
-              <h1 className="text-4xl text-white font-extrabold ">Get In </h1>
+              <h1 className="text-4xl text-orange-500 font-extrabold ">Get In </h1>
               <h1 className="text-4xl text-orange-300 font-extrabold ml-15">
                 Touch
               </h1>
             </div>
             <div className="mt-10">
-              <h1 className="text-4xl text-orange-300 font-extrabold italic">
+              <h1 className="text-4xl text-orange-500 font-extrabold italic">
                 If you have any Query
               </h1>
-              <h1 className="text-4xl text-white font-extrabold ml-12 italic">
+              <h1 className="text-4xl text-orange-300 font-extrabold ml-12 italic">
                 Please Contact With Us
               </h1>
             </div>
@@ -78,7 +80,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full p-5 max-w-xl xl:w-140 xl:h-150.5 xl:mt-10 md:mt-0 lg:w-130 md:w-160.5 md:h-140 bg-[radial-gradient(circle,#0b2a31_0%,#071A1F_40%,#000000_100%)] xl:rounded-r-2xl xl:rounded-l-none overflow-y-auto md:rounded-b-2xl">
+        <div  className="w-full p-5 max-w-xl xl:w-140 xl:h-150.5 xl:mt-10 md:mt-0 lg:w-130 md:w-160.5 md:h-140 bg-[radial-gradient(circle,#0b2a31_0%,#071A1F_40%,#000000_100%)] xl:rounded-r-2xl xl:rounded-l-none overflow-y-auto md:rounded-b-2xl">
           <form onSubmit={handleSubmit(SubmitForm)}>
             <div className="flex flex-col gap-2 mt-6">
               <label

@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <div className=" min-h-screen flex flex-col xl:flex-row lg:flex-row  items-center justify-center  bg-linear-to-t from-green-300 via-transparent to-orange-300  ">
-        <div className="w-auto h-auto  xl:w-145.5 xl:h-150.5 lg:w-145.5 lg:h-150.5 sm:h-160.5 sm:w-xl md:w-xl md:h-140  lg:mt-10 md:mt-20 sm:mt-35  md:rounded-t-2xl xl:rounded-r-none xl:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl sm:rounded-t-2xl bg-[radial-gradient(circle,#0b2a31_0%,#071A1F_40%,#000000_100%)]">
+        <div className="w-auto h-auto  xl:w-145.5 xl:h-145.5 lg:w-145.5 lg:h-150.5 sm:h-160.5 sm:w-xl md:w-xl md:h-140  lg:mt-10 md:mt-20 sm:mt-35  md:rounded-t-2xl xl:rounded-r-none xl:rounded-l-2xl lg:rounded-r-none lg:rounded-l-2xl sm:rounded-t-2xl bg-[radial-gradient(circle,#0b2a31_0%,#071A1F_40%,#000000_100%)]">
           <div className="flex flex-col justify-center items-center mt-40 md:mt-20 xl:mt-30 sm:mt-20">
             <h1 className="text-3xl xl:text-5xl text-orange-600 font-extrabold">
               Be a Part Of
@@ -62,10 +62,10 @@ function Home() {
           </div>
         </div>
 
-        <div className="w-full max-w-xl xl:w-130 lg:w-130 md:w-160.5 md:h-140">
+        <div className="w-full max-w-xl xl:w-130 lg:w-130 md:w-160.5 md:h-140 xl:mt-4.5">
           <img
             src={image}
-            className="w-130.5 md:w-150.5 h-120 md:h-140 xl:h-150 lg:h-150.5 sm:h-160 sm:w-xl object-cover   xl:rounded-r-2xl xl:rounded-l-none lg:rounded-l-none lg:rounded-r-2xl md:rounded-b-2xl sm:rounded-b-2xl mb-20  "
+            className="w-130.5 md:w-150.5 h-120 md:h-140 xl:h-145.5 lg:h-150.5 sm:h-160 sm:w-xl object-cover   xl:rounded-r-2xl xl:rounded-l-none lg:rounded-l-none lg:rounded-r-2xl md:rounded-b-2xl sm:rounded-b-2xl mb-20  "
           />
         </div>
       </div>
